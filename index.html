@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Zaporozhets</title>
+    </head>
+
+    <body>
+        <canvas id="space"></canvas>
+
+        <a href="https://youtu.be/dIhODj9je80" id="track">
+            <div class="track-album-art">
+                <img src="assets/album-art.jpg" alt="Album art." />
+            </div>
+
+            <div class="track-meta">
+                <div class="track-title">Запорожец (Zaporozhets)</div>
+                <div class="track-artist">Монеточка (Monetochka)</div>
+
+                <div class="track-youtube">
+                    <span>Watch on Youtube</span>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path
+                            d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"
+                        />
+                        <path d="M9.75 15.02l5.75-3.27-5.75-3.27v6.54z" />
+                    </svg>
+                </div>
+            </div>
+        </a>
+
+        <div class="car-container">
+            <div class="wheel wheel-rear">
+                <img src="assets/rim.png" alt="Rear Wheel" />
+            </div>
+
+            <div class="headlights"></div>
+            <img class="car" src="assets/car.png" alt="Car" />
+            <div class="taillights"></div>
+
+            <div class="wheel wheel-front">
+                <img src="assets/rim.png" alt="Front Wheel" />
+            </div>
+        </div>
+
+        <div id="lyrics">
+            <div id="primary"></div>
+            <div id="secondary"></div>
+        </div>
+
+        <div id="overlay">
+            <button id="play">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="80"
+                    height="80"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="3.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <path d="M5 3l14 9-14 9V3z" />
+                </svg>
+            </button>
+        </div>
+
+        <audio id="song" src="./assets/song.mp3" preload="auto"></audio>
+        <script src="./scripts/index.js"></script>
+    </body>
+</html>
