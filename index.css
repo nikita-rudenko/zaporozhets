@@ -13,7 +13,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-#track {
+.track {
     position: absolute;
     text-decoration: inherit;
     display: flex;
